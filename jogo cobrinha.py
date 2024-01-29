@@ -53,27 +53,23 @@ while True:
                 else:
                     y_controle= velocidade
                     x_controle= 0
-                y_controle= velocidade
-                x_controle = 0
-        if event.type == KEYDOWN:
+
+
             if event.key == K_w:
                 if y_controle == velocidade:
                     pass
                 else:
                     y_controle= -velocidade
                     x_controle= 0
-                y_controle= -velocidade
-                x_controle= 0
-        if event.type == KEYDOWN:
+
+
             if event.key == K_d:
                 if x_controle == -velocidade:
                     pass
                 else:
                     x_controle= velocidade
                     y_controle= 0
-                x_controle = velocidade
-                y_controle = 0
-        if event.type == KEYDOWN:
+
             if event.key == K_a:
                 if x_controle == velocidade:
                     pass
@@ -81,8 +77,6 @@ while True:
                     x_controle= -velocidade
                     y_controle= 0
 
-                x_controle= -velocidade
-                y_controle= 0
     x = x+x_controle
     y = y+y_controle
     cobra = pygame.draw.rect(t, (0,255,0), (x,y, 20,20))
